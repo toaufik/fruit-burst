@@ -16,6 +16,9 @@
                         clifford: '#da373d',
                         'accent': '#F85558',
                     }
+                },
+                container: {
+                    center: true,
                 }
             }
         }
@@ -31,7 +34,7 @@
 </head>
 
 <body>
-    <header class="md:container md:mx-auto">
+    <header class="md:max-w-[1440px] md:mx-auto">
         <nav class="">
             <div class="navbar bg-accent rounded-full text-white mt-12 p-6">
                 <div class="navbar-start hidden lg:flex">
@@ -65,7 +68,7 @@
                     </div>
                     <a class="btn btn-ghost normal-case text-xl hover:bg-transparent">
                         <img src="assets/images/logo.png" alt="" class="w-auto max-w-[45px] h-auto" />
-                            <span class="text-4xl">Fruit Burst</span></a>
+                        <span class="text-4xl">Fruit Burst</span></a>
                 </div>
 
                 <div class="navbar-end">
@@ -73,17 +76,105 @@
                         <input type="text" placeholder="Search here"
                             class="input flex-1 bg-transparent focus:border-transparent focus:outline-none text-gray-500" />
                         <div class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-2">
-                                <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" class="mr-2">
+                                <path
+                                    d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
+                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-
+        <!-- Slider Area -->
+        <div class="w-full lg:h-[600px] carousel bg-bike-primary-bg text-white mt-14 relative z-2">
+            <div id="slide1" class="relative w-full carousel-item bg-fixed bg-no-repeat bg-center bg-cover rounded-lg"
+                style="background-image: url('/assets/images/banner1.png')">
+                <!-- Background Overlay -->
+                <div class="absolute inset-0 rounded-lg z-0">
+                    <div
+                        class="before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#121212] before:to-transparent before:opacity-100 before:rounded-lg">
+                    </div>
+                </div>
+                <div class="flex flex-col justify-around w-full p-20 lg:flex-row relative z-1">
+                    <div class="slider-content space-y-7 text-center">
+                        <h2 class="text-3xl font-bold lg:text-8xl">Exotic tastes at your <br> doorstep</h2>
+                        <p>We supply highly quality organic products</p>
+                        <a class="text-white btn bg-accent hover:bg-black px-6 text-xl border-none">Shop Now</a>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-1">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="relative w-full carousel-item bg-fixed bg-no-repeat bg-center bg-cover rounded-lg"
+                style="background-image: url('/assets/images/banner2.png')">
+                <!-- Background Overlay -->
+                <div class="absolute inset-0 rounded-lg z-0">
+                    <div
+                        class="before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#121212] before:to-transparent before:opacity-100 before:rounded-lg">
+                    </div>
+                </div>
+                <div class="flex flex-col justify-around w-full p-20 lg:flex-row relative z-1">
+                    <div class="slider-content space-y-7 text-center">
+                        <h2 class="text-3xl font-bold lg:text-8xl">Exotic tastes at your <br> doorstep</h2>
+                        <p>We supply highly quality organic products</p>
+                        <a class="text-white btn bg-accent hover:bg-black px-6 text-xl border-none">Shop Now</a>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-1">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="relative w-full carousel-item bg-fixed bg-no-repeat bg-center bg-cover rounded-lg"
+                style="background-image: url('/assets/images/banner3.png')">
+                <!-- Background Overlay -->
+                <div class="absolute inset-0 rounded-lg z-0">
+                    <div
+                        class="before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#121212] before:to-transparent before:opacity-100 before:rounded-lg">
+                    </div>
+                </div>
+                <div class="flex flex-col justify-around w-full p-20 lg:flex-row relative z-1">
+                    <div class="slider-content space-y-7 text-center">
+                        <h2 class="text-3xl font-bold lg:text-8xl">Exotic tastes at your <br> doorstep</h2>
+                        <p>We supply highly quality organic products</p>
+                        <a class="text-white btn bg-accent hover:bg-black px-6 text-xl border-none">Shop Now</a>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-1">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="relative w-full carousel-item bg-fixed bg-no-repeat bg-center bg-cover rounded-lg"
+                style="background-image: url('/assets/images/banner4.png')">
+                <!-- Background Overlay -->
+                <div class="absolute inset-0 rounded-lg z-0">
+                    <div
+                        class="before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#121212] before:to-transparent before:opacity-100 before:rounded-lg">
+                    </div>
+                </div>
+                <div class="flex flex-col justify-around w-full p-20 lg:flex-row relative z-1">
+                    <div class="slider-content space-y-7 text-center">
+                        <h2 class="text-3xl font-bold lg:text-8xl">Exotic tastes at your <br> doorstep</h2>
+                        <p>We supply highly quality organic products</p>
+                        <a class="text-white btn bg-accent hover:bg-black px-6 text-xl border-none">Shop Now</a>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-1">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
     </header>
-    <main></main>
+    <main>
+
+    </main>
     <footer></footer>
 </body>
 
