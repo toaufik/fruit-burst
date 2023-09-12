@@ -36,7 +36,7 @@
 <body>
     <header class="md:max-w-[1440px] md:mx-auto">
         <nav class="">
-            <div class="navbar bg-accent rounded-full text-white mt-12 p-6">
+            <div class="navbar md:bg-accent rounded-full md:text-white text-black mt-8 md:mt-12p-0 md:p-6">
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-lg">
                         <li><a class="hover:bg-transparent">Home</a></li>
@@ -45,33 +45,33 @@
                         <li><a class="hover:bg-transparent">All Fruits</a></li>
                     </ul>
                 </div>
-                <div class="navbar-center">
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div class="navbar-center flex justify-between flex-row-reverse w-full md:w-auto">
+                    <div class="dropdown justify-end">
+                        <label tabindex="0" class="btn btn-circle swap swap-rotate btn btn-ghost lg:hidden">
+                            <input type="checkbox" />
+                            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
+                            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <polygon
+                                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                            </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black right-0">
+                            <li><a class="hover:bg-transparent">Home</a></li>
+                            <li><a class="hover:bg-transparent">About Us</a></li>
+                            <li><a class="hover:bg-transparent">Shop</a></li>
+                            <li><a class="hover:bg-transparent">All Fruits</a></li>
                         </ul>
                     </div>
                     <a class="btn btn-ghost normal-case text-xl hover:bg-transparent">
-                        <img src="assets/images/logo.png" alt="" class="w-auto max-w-[45px] h-auto" />
-                        <span class="text-4xl">Fruit Burst</span></a>
+                        <img src="assets/images/logo.png" alt="" class="w-auto md:max-w-[45px] max-w-[25px] h-auto" />
+                        <span class="text-1xl md:text-4xl">Fruit Burst</span></a>
                 </div>
 
-                <div class="navbar-end">
+                <div class="navbar-end hidden lg:flex">
                     <div class="input-group  md:w-[290px] rounded-full bg-white items-center">
                         <input type="text" placeholder="Search here"
                             class="input flex-1 bg-transparent focus:border-transparent focus:outline-none text-gray-500" />
@@ -173,7 +173,32 @@
         </div>
     </header>
     <main>
-
+        <!-- overlap section -->
+        <section class="md:block hidden">
+            <div class="max-w-[1200px] mx-auto shadow-lg rounded-md bg-white -mt-28 z-10 relative">
+                <div class="flex justify-between items-center p-14">
+                    <div>
+                        <img src="assets/images/fruit1.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/fruit2.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/fruit3.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/fruit5.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                </div>
+        </section>
     </main>
     <footer></footer>
 </body>
