@@ -36,7 +36,7 @@
 <body>
     <header class="md:max-w-[1440px] md:mx-auto">
         <nav class="">
-            <div class="navbar md:bg-accent rounded-full md:text-white text-black mt-8 md:mt-12p-0 md:p-6">
+            <div class="navbar lg:bg-accent rounded-full lg:text-white text-black mt-8 lg:mt-12 p-0 lg:p-6">
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-lg">
                         <li><a class="hover:bg-transparent">Home</a></li>
@@ -45,7 +45,7 @@
                         <li><a class="hover:bg-transparent">All Fruits</a></li>
                     </ul>
                 </div>
-                <div class="navbar-center flex justify-between flex-row-reverse w-full md:w-auto">
+                <div class="navbar-center flex justify-between flex-row-reverse w-full lg:w-auto">
                     <div class="dropdown justify-end">
                         <label tabindex="0" class="btn btn-circle swap swap-rotate btn btn-ghost lg:hidden">
                             <input type="checkbox" />
@@ -174,7 +174,7 @@
     </header>
     <main>
         <!-- overlap section -->
-        <section class="md:block hidden">
+        <section class="lg:block hidden">
             <div class="max-w-[1200px] mx-auto shadow-lg rounded-md bg-white -mt-28 z-10 relative">
                 <div class="flex justify-between items-center p-14">
                     <div>
@@ -200,7 +200,24 @@
                 </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="bg-black text-white text-center p-32">
+        <div>
+            <div class="logo">
+                <a class="btn btn-ghost normal-case text-xl hover:bg-transparent">
+                    <img src="assets/images/logo.png" alt="" class="w-auto md:max-w-[45px] max-w-[25px] h-auto" />
+                    <span class="text-1xl md:text-4xl">Fruit Burst</span></a>
+            </div>
+            <div>
+                <ul class="menu menu-horizontal px-1 text-lg space-x-8">
+                    <li><a class="hover:bg-transparent">Home</a></li>
+                    <li><a class="hover:bg-transparent">About Us</a></li>
+                    <li><a class="hover:bg-transparent">All Fruits</a></li>
+                    <li><a class="hover:bg-transparent">Support</a></li>
+                    <li><a class="hover:bg-transparent">My Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
