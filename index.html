@@ -205,7 +205,8 @@
         <section class="md:max-w-[1440px] md:mx-auto py-32">
             <div class="flex items-center justify-between">
                 <div class="max-w-2xl">
-                    <h2 class="text-2xl md:text-3xl mb-2 font-extrabold lg:text-[40px] pb-6 text-heading">Deal of the day</h2>
+                    <h2 class="text-2xl md:text-3xl mb-2 font-extrabold lg:text-[40px] pb-6 text-heading">Deal of the
+                        day</h2>
                     <p class="text-base text-paragraph">Contrary to popular belief, is not simply random text. It has
                         roots in a piece of classical Latin
                         literature from 45 BC, making it over 2000 years old.</p>
@@ -213,19 +214,22 @@
                 <div>
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
                         <div class="flex flex-col text-paragraph">
-                            <span class="pb-2 pr-6 font-mono text-5xl font-semibold border-r-2 border-dotted countdown text-heading border-heading">
+                            <span
+                                class="pb-2 pr-6 font-mono text-5xl font-semibold border-r-2 border-dotted countdown text-heading border-heading">
                                 <span style="--value:29;"></span>
                             </span>
                             Days
                         </div>
                         <div class="flex flex-col text-paragraph">
-                            <span class="pb-2 pr-6 font-mono text-5xl font-semibold border-r-2 border-dotted countdown text-heading border-heading">
+                            <span
+                                class="pb-2 pr-6 font-mono text-5xl font-semibold border-r-2 border-dotted countdown text-heading border-heading">
                                 <span style="--value:15;"></span>
                             </span>
                             Hours
                         </div>
                         <div class="flex flex-col text-paragraph">
-                            <span class="pb-2 pr-6 font-mono text-5xl font-semibold border-r-2 border-dotted countdown text-heading border-heading">
+                            <span
+                                class="pb-2 pr-6 font-mono text-5xl font-semibold border-r-2 border-dotted countdown text-heading border-heading">
                                 <span style="--value:25;"></span>
                             </span>
                             Minutes
@@ -239,58 +243,62 @@
                     </div>
                 </div>
             </div>
-            <div class="my-12">
-                <div class="text-center shadow-xl card w-96 bg-base-100">
-                    <figure><img src="assets/images/fruit6.png" alt="Shoes" /></figure>
-                    <div class="card-body">
+            <div class="grid justify-between grid-cols-1 gap-4 my-12 xl:grid-cols-4 lg:grid-cols-2">
+                <div class="text-center border-2 card bg-base-100 border-[rgba(18, 18, 18, 0.10)]">
+                    <figure><img src="assets/images/fruit6.png" alt="Shoes" class="pt-6" /></figure>
+                    <div class="space-y-4 card-body">
                         <h2 class="block text-2xl font-bold text-center">12.90$ - 18.85$</h2>
-                        <p>Apples</p>
+                        <hr>
+                        <p class="">Apples</p>
                         <div class="flex justify-center text-center rating rating-lg rating-half">
                             <input type="radio" name="rating-10" class="rating-hidden" />
                             <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1" />
                             <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-2" />
                             <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1"
                                 checked />
-                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-2" />
-                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1" />
-                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
                         </div>
                         <div class="justify-center card-actions">
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="bg-transparent border-0 btn hover:bg-transparent"
-                                onclick="my_modal_1.showModal()">open modal</button>
+                            <button class="capitalize bg-transparent border-0 btn hover:bg-transparent text-accent"
+                                onclick="my_modal_1.showModal()">Details</button>
                             <dialog id="my_modal_1" class="modal">
-                                <div class="modal-box max-w-[800px]">
-                                    <img src="assets/images/fruit8.png" alt="" class="mx-auto">
-                                    <h3 class="text-lg font-bold">Red Dragon</h3>
-                                    <p class="py-4">Professional employees are there for you to pick the most amazing
+                                <div class="modal-box max-w-[800px] space-y-4 py-8">
+                                    <img src="assets/images/fruit6.png" alt="" class="mx-auto lg:w-[350px]">
+                                    <h3 class="text-4xl font-bold font-extrabold">Apple</h3>
+                                    <p class="py-4 text-paragraph">Professional employees are there for you to pick the
+                                        most amazing
                                         and fresh fruits.</p>
-                                    <div class="flex justify-center text-center rating rating-lg rating-half">
-                                        <input type="radio" name="rating-10" class="rating-hidden" />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-1" />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-2" />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-1" checked />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-2" />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-1" />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-2" />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-1" />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-2" />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-1" />
-                                        <input type="radio" name="rating-10"
-                                            class="bg-accent mask mask-star-2 mask-half-2" />
+                                    <div class="pb-6">
+                                        <div class="flex justify-center text-center rating rating-lg rating-half">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                        </div>
                                     </div>
                                     <div class="justify-center modal-action">
                                         <form method="dialog">
@@ -304,6 +312,213 @@
                         </div>
                     </div>
                 </div>
+                <div class="text-center border-2 card bg-base-100 border-[rgba(18, 18, 18, 0.10)]">
+                    <figure><img src="assets/images/fruit7.png" alt="Shoes" class="pt-6" /></figure>
+                    <div class="space-y-4 card-body">
+                        <h2 class="block text-2xl font-bold text-center">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="">Orange</p>
+                        <div class="flex justify-center text-center rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="justify-center card-actions">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="capitalize bg-transparent border-0 btn hover:bg-transparent text-accent"
+                                onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <div class="modal-box max-w-[800px] space-y-4 py-8">
+                                    <img src="assets/images/fruit7.png" alt="" class="mx-auto lg:w-[350px]">
+                                    <h3 class="text-4xl font-bold font-extrabold">orange</h3>
+                                    <p class="py-4 text-paragraph">Professional employees are there for you to pick the
+                                        most amazing
+                                        and fresh fruits.</p>
+                                    <div class="pb-6">
+                                        <div class="flex justify-center text-center rating rating-lg rating-half">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                        </div>
+                                    </div>
+                                    <div class="justify-center modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="border-accent text-accent btn btn-outline">Close</button>
+                                        </form>
+                                        <div class="text-white btn bg-accent hover:bg-black">buy Now</div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center border-2 card bg-base-100 border-[rgba(18, 18, 18, 0.10)]">
+                    <figure><img src="assets/images/fruit8.png" alt="Shoes" class="pt-6 max-w-[140px]" /></figure>
+                    <div class="space-y-4 card-body">
+                        <h2 class="block text-2xl font-bold text-center">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="">Red Dragon</p>
+                        <div class="flex justify-center text-center rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="justify-center card-actions">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="capitalize bg-transparent border-0 btn hover:bg-transparent text-accent"
+                                onclick="my_modal_3.showModal()">Details</button>
+                            <dialog id="my_modal_3" class="modal">
+                                <div class="modal-box max-w-[800px] space-y-4 py-8">
+                                    <img src="assets/images/fruit8.png" alt="" class="mx-auto lg:w-[350px]">
+                                    <h3 class="text-4xl font-bold font-extrabold">Red Dragon</h3>
+                                    <p class="py-4 text-paragraph">Professional employees are there for you to pick the
+                                        most amazing
+                                        and fresh fruits.</p>
+                                    <div class="pb-6">
+                                        <div class="flex justify-center text-center rating rating-lg rating-half">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                        </div>
+                                    </div>
+                                    <div class="justify-center modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="border-accent text-accent btn btn-outline">Close</button>
+                                        </form>
+                                        <div class="text-white btn bg-accent hover:bg-black">buy Now</div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center border-2 card bg-base-100 border-[rgba(18, 18, 18, 0.10)]">
+                    <figure><img src="assets/images/fruit9.png" alt="Shoes" class="pt-6" /></figure>
+                    <div class="space-y-4 card-body">
+                        <h2 class="block text-2xl font-bold text-center">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="">Banana</p>
+                        <div class="flex justify-center text-center rating rating-lg rating-half">
+                            <input type="radio" name="rating-10" class="rating-hidden" />
+                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-accent mask mask-star-2 mask-half-1"
+                                checked />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
+                            <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+                        </div>
+                        <div class="justify-center card-actions">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="capitalize bg-transparent border-0 btn hover:bg-transparent text-accent"
+                                onclick="my_modal_4.showModal()">Details</button>
+                            <dialog id="my_modal_4" class="modal">
+                                <div class="modal-box max-w-[800px] space-y-4 py-8">
+                                    <img src="assets/images/fruit9.png" alt="" class="mx-auto lg:w-[350px]">
+                                    <h3 class="text-4xl font-bold font-extrabold">Banana</h3>
+                                    <p class="py-4 text-paragraph">Professional employees are there for you to pick the
+                                        most amazing
+                                        and fresh fruits.</p>
+                                    <div class="pb-6">
+                                        <div class="flex justify-center text-center rating rating-lg rating-half">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10"
+                                                class="bg-accent mask mask-star-2 mask-half-2" />
+                                        </div>
+                                    </div>
+                                    <div class="justify-center modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="border-accent text-accent btn btn-outline">Close</button>
+                                        </form>
+                                        <div class="text-white btn bg-accent hover:bg-black">buy Now</div>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="" class="text-white btn bg-accent hover:bg-black">Shop All</a>
             </div>
         </section>
     </main>
